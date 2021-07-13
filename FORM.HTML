@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="FORMULARIO.CSS" mdeia="screen">
+    <title>Matrícula</title>
+</head>
+<body>
+    <div>
+
+        <h1 id="titulo">CADASTRO DE ALUNO</h1>
+        <p id="subtitulo"> Preencha suas informações</p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required>
+                        </div>
+                        <div class="campo">
+                            <label for="sobrenome">Sobrenome</label>
+                            <input type="text" name="sobrenome" id="sobrenome" required>
+
+                        </div>
+                        <div class="campo">
+                            <label>E-mail</label>
+                            <input type="email" nome="email" id="email" required>
+                        </div>
+                    </fieldset><br>
+                        <div class="campo">
+                         <label><strong>Idade</strong></label><br>
+                            <label>
+                                <input type="radio" name="idade" value="anos"> Menor de 18 anos
+                            </label><br>
+                            <label>
+                                <input type="radio" name="idade" value="anos">Entre 18 e 25 anos
+                
+                            </label><br>
+                            <label>
+                                <input type="radio" name="idade" value="anos">Acima de 25 anos
+                            </label>
+                        </div>
+                        <div>
+                            <label for="fluência"><strong>Fluência</strong></label>
+                            <select id="fluência">
+                                <option selected disabled value="">Selecione</option>
+                                <option>Iniciante</option>
+                                <option>Básico</option>
+                                <option>Intermediário</option>
+                                <option>Avançado</option>
+                                <option>Fluente</option>
+                            </select>
+                        
+                        </div><br>
+                        <fieldset class="grupo">
+                            <div>
+                                <label><strong>Quais idiomas você tem interesse?</strong></label><br><br>
+                                <input type="checkbox" id="idioma1" name="idioma1" value="inglês">
+                                <label for="idioma1">Inglês</label>
+                                <input type="checkbox" id="idioma2" name="idioma2" value="francês">
+                                <label for="idioma2">Francês</label>
+                                <input type="checkbox" id="idioma3" name="idioma3" value="espanhol">
+                                <label for="idioma3">Espanhol</label>
+                                <input type="checkbox" id="idioma4" name="idioma4" value="alemão">
+                                <label for="idioma4">Alemão</label>
+                            </div>
+                        </fieldset>
+                        <div>
+                            <br>
+                            <label><strong>Qual motivo você quer aprender um novo idioma?</strong><br></label>
+                            <textarea row="8" style="width: 26em" id="aprender" name="aprender"></textarea>
+
+                        </div>
+                        <button type="submit" calss="botao">Finalizar</button>
+    
+        
+    </form>
+    
+</body>
+</html>
